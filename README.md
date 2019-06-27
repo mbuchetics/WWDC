@@ -696,11 +696,11 @@ https://developer.apple.com/wwdc19/249
 
 - Supported on iPhone `XS, XS Max, XR, iPad Pro 3rd Gen`
 - **AVCaptureMultiCamSession**
-  - Multiple `AVCaptureDeiceInputs`, `AVCaptureDeiceOutputs` of the same type, `AVCaptureVideoPreviewLayers`
+  - Multiple `AVCaptureDeviceInputs`, `AVCaptureDeviceOutputs` of the same type, `AVCaptureVideoPreviewLayers`
   - Don't use implicit connection forming but use `addInputWithNoConnections`, `addOutputWithNoConnections` or `AVCaptureVideoPreviewLayer.setSessionWithNoConnection`
 - **AVCaptureSession** is still the way to got for single cam session
   - Simultaneous photo shooting, movie recording, barcode scanning, etc.
-- **Limitiations**
+- **Limitations**
   - only one input per camera in a session 
   - connecting one camera to multiple video data outouts is not possible
   - no presets supported on session since different cams might run with different qualities
